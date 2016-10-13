@@ -31,7 +31,7 @@ function bubble_sort(array) {
 function substrings(str){
   let subs = [];
   for (var i = 0; i < str.length; i++) {
-    for (var j = i+1; j <= str.length; j++) {
+    for (var j = i+1; j <= str.length; j++) { // changed j == str.length to j <= str.length
       let slice = str.slice(i, j);
       if (subs.includes(slice) === false){
         subs.push(slice);
